@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/main.js" defer></script>
+  <title>ToDo List</title>
+</head>
+<body>
+  <div class="container">
+    <div class="todo">
+      <h2>Todos</h2>
+      <div class="listrow">
+        <form class="add-form">
+          <input type="text" id="input-box" class="input-box" placeholder=" Görev Ekle">
+        </form>
+      </div>
+      <ul class="todo-list">
+      </ul>
+      <div class="radiomenu">
+        <!-- item left olayı -->
+        <div class="footerdiv"><span class="footer-leftitem"></span></div>
+        <label><input type="radio" name="filter" value="all">All</label>
+        <label><input type="radio" name="filter" value="active">Actives</label>
+        <label><input type="radio" name="filter" value="completed">Completed</label>
+        <div class="footerdivright"><span class="footer-rightitem">Clear Complete</span></div>
+      </div>
+      <div class="modal" id="confirmModal">
+        <div class="modal-content">
+          <p>Bu görevi silmek istediğinizden emin misiniz?</p>
+          <button class="confirm-button">Evet</button>
+          <button class="cancel-button">İptal</button>
+        </div>
+      </div> 
+    </div> 
+  </div>
+</body>
+</html>
